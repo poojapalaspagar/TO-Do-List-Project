@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, rgb(245, 131, 86) , rgb(233, 149, 219),rgb(112, 247, 235));
+}
+header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 3px 2px 2px grey;
+    float: left;   
+}
+#head{ margin-top: 24px;
+    font-size: 40px;
+    margin-left: 35px;
+    padding-left: 20px;
+    color: rgb(168, 18, 18);
+    text-shadow: 2px 1px rgb(116, 236, 230);
+}
+ul{
+    margin: 0;
+    padding: 0;
+   list-style: none;
+   float:right;
+   margin-top: -90px;
+   color: rgb(165, 42, 93);
+   text-shadow: 2px 1px rgb(247, 184, 101);
+
+}
+ul li{
+    display: inline-block;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 19px;
+    margin: 10px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(165, 42, 93);
+    text-shadow: 2px 1px rgb(247, 184, 101);
+}
+
+ul li a :hover{
+    background-color: rgb(255, 167, 117);
+    color: rgb(33, 30, 37);
+    text-shadow: 2px 2px rgb(245, 194, 238);
+    border-radius: 20px;
+}
+a:hover{
+    background-color: rgb(255, 167, 117);
+    color: rgb(33, 30, 37);
+    text-shadow: 2px 2px rgb(245, 194, 238);
+    border-radius: 4px;
+    padding: 7px 13px;
+}
+section{
+    width: 100%;
+    height: auto;
+    float: left;
+
+}
+
+#box1 , #box2{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+    box-shadow: 3px 5px 13px grey;
+    padding-bottom: 10px;
+    
+    
+}
+#box1 h1,#box2 h1{
+    color: rgb(184, 33, 33);
+    text-shadow: 2px 1px rgb(247, 184, 101);
+    text-align: center;
+    font-family: cursive;
+}
+#Addmodal{
+    width: 450px;
+    height: 180px;
+    top: 35%;
+    left: 35%;
+    background-image: linear-gradient(to right, rgb(245, 131, 86) , rgb(233, 149, 219),rgb(112, 247, 235));
+    position: absolute;
+    border-radius: 10px;
+    padding: 15px;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    display: none;
+    box-shadow: 3px 1px 1px 3px #82f4f8;
+}
+#Addmodal label{
+    color: rgb(184, 33, 33);
+    text-shadow: 2px 1px rgb(247, 184, 101);
+    font-size: 20px;
+    margin-left: 5px;
+}
+#Addmodal #todo{
+    width: 85%;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    margin: 10px 5px;
+}
+#Addmodal #add-btn{
+    background-color: #82f4f8;
+    color: rgb(184, 33, 33);
+    text-shadow: 2px 1px rgb(247, 184, 101);
+    padding: 10px 15px ;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+}
+#Addmodal #add-btn:hover{
+    background-color: rgb(216, 190, 104);
+    color: rgb(13, 74, 241);
+    text-shadow: 2px 1px rgb(213, 245, 69);
+    cursor: pointer;
+}
+#Addmodal_background{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(87, 83, 83, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#manage-todo{
+    width: auto;
+    height: auto;
+    top: 40%;
+    left:-50%;
+    border-radius: 10px;
+    padding: 10px 15px;
+    position: absolute;
+    background-image: linear-gradient(to right, rgb(245, 131, 86) , rgb(233, 149, 219),rgb(112, 247, 235));
+    box-shadow: 3px 1px 1px 3px #82f4f8;
+     color: rgb(184, 33, 33);
+    text-shadow: 2px 1px rgb(247, 184, 101);
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+#manage-todo td{
+    color: rgb(39, 34, 83);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+#manage-todo th{
+   padding: 10px;
+}
+#manage-todo td:hover{
+    background-color:rgb(238, 248, 90); ;
+}
+#todo-list{
+ 
+    height: auto;
+    border-collapse: collapse;
+   display: inline-block;
+
+}
+
+p {
+     margin: 0;
+    padding: 5px;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(39, 34, 83);
+ 
+}
+
+ .mark_btn{
+ padding: 8px 20px ;
+ color: rgb(39, 34, 83);
+ background-color: rgb(228, 123, 4);
+ border: none;
+ margin-top: -8%;
+ margin-left: 80%;
+ font-size: 18px;
+ display: inline-block;
+}
+ .unmark-btn{
+    padding: 8px 20px ;
+    color: rgb(39, 34, 83);
+    background-color: rgb(228, 123, 4);
+    border: none;
+    font-size: 18px;
+    margin-top: -8%;
+    margin-left: 80%;
+    display: inline-block;
+   }
+   .unmark-btn:hover{
+    color: rgb(39, 34, 83);
+    background-color: rgb(250, 160, 57);
+    cursor: pointer;
+    
+   }
+#box1_list li .mark_btn:hover{
+    color: rgb(39, 34, 83);
+    background-color: rgb(250, 160, 57);
+    cursor: pointer;
+}
+ p:hover{
+    background-color: rgb(245, 172, 88);
+}
+
+#todo-list .edit-btn , #todo-list .update-btn{
+    color: rgb(15, 15, 53);
+    padding: 6px 18px;
+    background-color: rgb(210, 245, 11);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+#todo-list .update-btn{
+    color: rgb(15, 15, 53);
+    padding: 6px 18px;
+    background-color: rgb(11, 105, 245);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+}
+#todo-list .edit-btn:hover{
+    background-color: rgb(247, 83, 83);
+    color: black;
+    cursor: pointer;
+}
+#todo-list .del-btn{
+    border: none;
+    padding: 6px 18px;
+    background-color: rgb(243, 116, 12);
+    color: rgb(15, 15, 53);
+    border-radius: 4px;
+    cursor: pointer;
+}
+#todo-list .del-btn:hover{
+    background-color: chartreuse;
+}
+#todo-list th,td{
+    padding: 8px 30px;
+}
+
+
+#Toast{
+ width: 320px;
+ height:auto;
+ position: absolute;
+ top: 55%;
+ right: 20px;
+ padding: 8px 5px;
+ border-radius: 10px;
+ background-color: rgb(248, 99, 44);
+ z-index: 1;
+ display: none;
+}
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO PROJECT </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="head" class="animate__animated animate__zoomIn animate__slower animate__infinite">POOJA'S TODO APP</h1>
+        <ul>
+            <li><a href="Pooja.html">Home</a></li>
+            <li><a href="#" id="add-todo-btn">Add Todo</a></li>
+            <li><a href="#" id="manage-btn">Manage Todo</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div id="box1">
+            <h1>Today's Task</h1>
+            <hr style=" border-color: rgb(235, 188, 101);">
+
+            <ol id="box1_list">
+                <!-- <li><p>Pooja Palaspagar</p><button class="markbtn">Mark</button></li>
+                <li><p>Pooja Palaspagar</p><button class="markbtn">Mark</button></li>-->
+            </ol>
+        </div>
+
+        <div id="box2">
+            <h1>completed-task</h1>
+            <hr style=" border-color: rgb(235, 188, 101);">
+            <ol id="box2_list">
+                <!--  <li><p>Pooja Palaspagar</p><button class="unmark-btn">Unmark</button></li>
+                <li><p>Pooja Palaspagar</p><button class="unmark-btn">Unmark</button></li>
+            </ol>-->
+        </div>
+    </section>
+
+    <div id="Addmodal">
+        <form id="AddTodo_form">
+            <label for="add">Add Your Todo</label> <br>
+            <input type="text" name="todo" id="todo" placeholder="Enter Todo"> <br>
+            <input type="submit" value="Add" id="add-btn">
+        </form>
+    </div>
+
+    <div id="Addmodal_background">
+
+    </div>
+    <div id="manage-todo">
+        <table id="todo-list" border="1">
+            <tr>
+                <th>Sr. No</th>
+                <th>Todo's</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+
+            <!----<tr>
+                    <td>1</td>
+                    <td>Pooja Palaspagar</td>
+                    <td><button class="edit_btn">Edit</button></td>
+                    <td><button class="del_btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pooja Palaspagar</td>
+                    <td><button class="edit_btn">Edit</button></td>
+                    <td><button class="del_btn">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pooja Palaspagar</td>
+                    <td><button class="edit_btn">Edit</button></td>
+                    <td><button class="del_btn">Delete</button></td>
+                </tr> -->
+        </table>
+    </div>
+    <div id="Toast" class="animate__animated animate__bounceIn ">
+        <p id="toast-text"> Please Enter Your TODO....!</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
